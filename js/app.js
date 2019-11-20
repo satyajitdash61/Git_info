@@ -40,8 +40,14 @@ const showData = () => {
 
 const userRepo = () => {
   fetchRepos(gitID).then(result => {
-    console.log(result.data[10].name);
-    
+    console.log(result.data[1].name);
+    result.data.forEach(i => {
+      $("#maindiv").append(`<div id="jobResults" style="border-bottom: 1px solid">
+      <p id="name"><span>${i.name}</span></p>
+  </div>`)
+  // console.log(i.name);
+  
+  });
     
   });
 };
