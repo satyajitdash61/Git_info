@@ -10,3 +10,10 @@
     color: white;
 
 }
+.screen{
+    height: 70vh;
+    /* background-color: black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
